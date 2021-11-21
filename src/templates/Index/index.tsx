@@ -20,7 +20,6 @@ export const Index = () => (
       alt="A Gatsby astronaut"
     />
     <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-ssr">Go to &quot;Using SSR&quot;</Link> <br />
       <Link to="/using-dsg">Go to &quot;Using DSG&quot;</Link>
     </p>

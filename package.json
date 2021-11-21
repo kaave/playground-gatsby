@@ -1,8 +1,7 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "playground-gatsby",
   "private": true,
-  "description": "Gatsby with Netlify and microCMS",
-  "license": "0BSD",
+  "description": "playground repository by gatsby",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
