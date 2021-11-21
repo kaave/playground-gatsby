@@ -1,4 +1,10 @@
-# Directory structure
+# styles
+
+## important
+
+This project uses `dart-sass`.
+
+## Directory structure
 
 ```txt
 .

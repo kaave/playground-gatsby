@@ -12,7 +12,7 @@
     "lint": "       run-p lint:*",
     "lint:script": "eslint -c ./.eslintrc.js './src/**/*.{ts,tsx}'",
     "lint:style": " stylelint --config ./.stylelintrc.js './src/**/*.{css,scss}'",
-    "lint:spell": " yarn cspell './src/**/*.{ts,tsx,css,scss}'",
+    "lint:spell": " cspell './src/**/*.{ts,tsx,css,scss}'",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -70,7 +70,9 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gatsby-plugin-no-sourcemaps": "^4.2.0",
     "gatsby-plugin-sass": "^5.2.0",
+    "gatsby-plugin-sitemap": "^5.2.0",
     "gatsby-plugin-tsconfig-paths": "^1.0.3",
     "gatsby-plugin-typegen": "^2.2.4",
     "husky": "^7.0.4",
