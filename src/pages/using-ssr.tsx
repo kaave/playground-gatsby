@@ -1,10 +1,10 @@
-import * as React from "react"
+import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const UsingSSR = ({ serverData }) => {
+const UsingSSR = ({ serverData }: { serverData: { message: string } }) => {
   return (
     <Layout>
       <Seo title="Using SSR" />
