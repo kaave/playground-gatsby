@@ -1,5 +1,5 @@
-import Layout from '../components/layout';
-import Seo from '../components/seo';
+import Layout from '@components/layout';
+import Seo from '@components/seo';
 import React from 'react';
 
 const NotFoundPage = function () {

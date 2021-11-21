@@ -16,6 +16,8 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    'gatsby-plugin-tsconfig-paths',
+    'gatsby-plugin-typegen',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

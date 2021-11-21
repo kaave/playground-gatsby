@@ -140,6 +140,7 @@ module.exports = {
     'react/jsx-uses-react': 'off', // New JSX Transform (tsconfig.json "jsx": "react-jsx") の利用で `import React from 'react';` が不要となるため
     'react/react-in-jsx-scope': 'off', // New JSX Transform (tsconfig.json "jsx": "react-jsx") の利用で `import React from 'react';` が不要となるため
     'react/require-default-props': 'off',
+    'react/function-component-definition': 'off',
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
 

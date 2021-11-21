@@ -13,7 +13,7 @@
         "moduleResolution": "node",
         "baseUrl": ".",
         "paths": {
-            "@components/*": ["./src/components/*"],
+            "@components/*": ["./src/designs/components/*"],
             "@images/*": ["./src/images/*"],
             "@/*": ["./src/*"],
             "~/*": ["./*"]

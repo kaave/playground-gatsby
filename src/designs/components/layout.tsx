@@ -6,6 +6,7 @@
  */
 import Header from './header';
 import './layout.scss';
+import { Structure } from '@/common/Structure';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import type { ReactNode } from 'react';
@@ -14,8 +15,8 @@ type Props = {
   children: ReactNode;
 };
 
-const Layout = function ({ children }: Props) {
-  const data = useStaticQuery(graphql`
+const Layout = ({ children }: Props) => {
+  const data = useStaticQuery<GatsbyTypes.SiteTitleQueryQuery>(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -26,8 +27,8 @@ const Layout = function ({ children }: Props) {
   `);
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+    <Structure>
+      <Header siteTitle={data.site?.siteMetadata?.title || `Title`} />
       <div
         style={{
           margin: `0 auto`,
@@ -46,7 +47,7 @@ const Layout = function ({ children }: Props) {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
-    </>
+    </Structure>
   );
 };
 

@@ -1,0 +1,24 @@
+@use "tokens/color";
+@use "tokens/font";
+@use "tokens/zIndex";
+@use "mixins";
+
+html {
+    width: 100%;
+    height: -webkit-fill-available;
+    font-size: 62.5%;
+    font-feature-settings: "palt" on;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+}
+
+body {
+    display: block; // fix: https://github.com/vercel/next.js/discussions/16104
+    width: 100%;
+    min-height: 100vh;
+    min-height: -webkit-fill-available; // mobile viewport bug fix
+    font-family: font.$familyBase;
+    font-size: font.$sizeM;
+    color: color.$black;
+    background: color.$white;
+}

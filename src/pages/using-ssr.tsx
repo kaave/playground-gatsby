@@ -1,5 +1,5 @@
-import Layout from '../components/layout';
-import Seo from '../components/seo';
+import Layout from '@components/layout';
+import Seo from '@components/seo';
 import { Link } from 'gatsby';
 import React from 'react';
 
