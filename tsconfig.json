@@ -13,8 +13,10 @@
         "moduleResolution": "node",
         "baseUrl": ".",
         "paths": {
-            "@components/*": ["./src/designs/components/*"],
+            "@components/*": ["./src/components/*"],
             "@images/*": ["./src/images/*"],
+            "@styles/*": ["./src/styles/*"],
+            "@templates/*": ["./src/styles/*"],
             "@/*": ["./src/*"],
             "~/*": ["./*"]
         },

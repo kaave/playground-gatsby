@@ -5,16 +5,16 @@
 ```txt
 .
 ├── .cache            # gatsby generates cache files
-├── .husky            # configs that commit hook library `husky` 
+├── .husky            # configs that commit hook library `husky`
 ├── node_modules      # black hole
 ├── public            # gatsby generates files
+├── scripts           # gatsby supports scripts
 ├── src
     ├── __generated__ # auto generated codes from GraphQL query
     ├── components    # common components
-    ├── styles        # style files
     ├── images        # static images
     ├── pages         # routes defines container components
-    ├── scripts       # Gatsby supports scripts
+    ├── styles        # style files
     └── templates     # root function components
 ├── .eslintrc.js
 ├── .gitignore

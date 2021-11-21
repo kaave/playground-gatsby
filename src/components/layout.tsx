@@ -6,7 +6,7 @@
  */
 import Header from './header';
 import './layout.scss';
-import { Structure } from '@/common/Structure';
+import { Structure } from '@components/Structure';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import type { ReactNode } from 'react';
