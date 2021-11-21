@@ -69,4 +69,5 @@ yarn-error.log
 .yarn-integrity
 
 ### Manual ###
+.vscode
 src/__generated__
