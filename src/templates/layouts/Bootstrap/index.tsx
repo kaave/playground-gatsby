@@ -6,4 +6,5 @@ type Props = {
   children: ReactNode;
 };
 
-export const Structure = ({ children }: Props) => <div>{children}</div>;
+// eslint-disable-next-line react/jsx-no-useless-fragment
+export const Bootstrap = ({ children }: Props) => <>{children}</>;

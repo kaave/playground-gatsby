@@ -13,6 +13,7 @@
     "lint:script": "eslint -c ./.eslintrc.js './src/**/*.{ts,tsx}'",
     "lint:style": " stylelint --config ./.stylelintrc.js './src/**/*.{css,scss}'",
     "lint:spell": " cspell './src/**/*.{ts,tsx,css,scss}'",
+    "typecheck": "tsc --noEmit --skipLibCheck -p ./tsconfig.json",
     "prepare": "husky install"
   },
   "lint-staged": {

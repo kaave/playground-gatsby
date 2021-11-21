@@ -1,15 +1,15 @@
-import Layout from '@components/layout';
-import Seo from '@components/seo';
+import { Meta } from '@components/widgets/Meta';
+import { StandardLayout } from '@templates/layouts/Standard';
 import { Link } from 'gatsby';
 import React from 'react';
 
 const SecondPage = () => (
-  <Layout>
-    <Seo title="Page two" />
+  <StandardLayout>
+    <Meta title="Page two" />
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>
     <Link to="/">Go back to the homepage</Link>
-  </Layout>
+  </StandardLayout>
 );
 
 export default SecondPage;

@@ -1,12 +1,12 @@
-import Layout from '@components/layout';
-import Seo from '@components/seo';
+import { Meta } from '@components/widgets/Meta';
+import { StandardLayout } from '@templates/layouts/Standard';
 import React from 'react';
 
 const NotFoundPage = () => (
-  <Layout>
-    <Seo title="404: Not found" />
+  <StandardLayout>
+    <Meta title="404: Not found" />
     <h1>404: Not Found</h1>
-  </Layout>
+  </StandardLayout>
 );
 
 export default NotFoundPage;

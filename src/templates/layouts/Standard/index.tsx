@@ -4,9 +4,10 @@
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
-import Header from './header';
-import './layout.scss';
-import { Structure } from '@components/Structure';
+import { Header } from '../../../components/widgets/Header';
+import './index.scss';
+import { Footer } from '@components/widgets/Footer';
+import { Bootstrap } from '@templates/layouts/Bootstrap';
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import type { ReactNode } from 'react';
@@ -15,19 +16,21 @@ type Props = {
   children: ReactNode;
 };
 
-const Layout = ({ children }: Props) => {
-  const data = useStaticQuery<GatsbyTypes.SiteTitleQueryQuery>(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+const query = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
       }
     }
-  `);
+  }
+`;
+
+export const StandardLayout = ({ children }: Props) => {
+  const data = useStaticQuery<GatsbyTypes.SiteTitleQueryQuery>(query);
 
   return (
-    <Structure>
+    <Bootstrap>
       <Header siteTitle={data.site?.siteMetadata?.title || `Title`} />
       <div
         style={{
@@ -37,18 +40,8 @@ const Layout = ({ children }: Props) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
       </div>
-    </Structure>
+      <Footer />
+    </Bootstrap>
   );
 };
-
-export default Layout;
