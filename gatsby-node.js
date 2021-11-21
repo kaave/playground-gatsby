@@ -1,9 +1,10 @@
-exports.createPages = async ({ actions }) => {
-  const { createPage } = actions
-  createPage({
-    path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.tsx"),
-    context: {},
-    defer: true,
-  })
-}
+require('ts-node').register({
+  compilerOptions: {
+    module: 'commonjs',
+    target: 'esnext',
+  },
+});
+
+require('./src/__generated__/gatsby-types');
+
+exports.createPages = require('./src/scripts/gatsby-node/index').createPages;
