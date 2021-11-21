@@ -8,11 +8,15 @@ const postcssMediaMinmax = require('postcss-media-minmax');
 const postcssUrl = require('postcss-url');
 const autoprefixer = require('autoprefixer');
 
+require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
+
+const { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR, SITE_URL } = process.env;
+
 const siteMetadata = {
-  title: 'Gatsby Starter by @kaave',
-  description: 'Gatsby Starter by @kaave.',
-  author: '@kaave',
-  siteUrl: 'https://kaave.estate/',
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  author: SITE_AUTHOR,
+  siteUrl: SITE_URL,
 };
 
 const plugins = [

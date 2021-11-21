@@ -2,7 +2,7 @@
 
 ## WIP
 
-- [ ] dotenv
+- [x] dotenv
 - [ ] Add page transition
 - [ ] Google Analytics / Tag Manager
 - [ ] Connect with Headless CMS
