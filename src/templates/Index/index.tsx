@@ -1,6 +1,7 @@
 import { StandardLayout } from '../layouts/Standard';
 import * as classes from './index.module.scss';
 import { Meta } from '@components/widgets/Meta';
+import { Routes } from '@gen/Routes';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
@@ -22,10 +23,10 @@ export const Index = () => (
     />
     <ul>
       <li>
-        <Link to="/using-ssr">Go to &quot;Using SSR&quot;</Link>
+        <Link to={Routes.UsingSsr}>Go to &quot;Using SSR&quot;</Link>
       </li>
       <li>
-        <AniLink paintDrip duration={1} to="/using-ssr">
+        <AniLink paintDrip duration={1} to={Routes.UsingSsr}>
           Go to &quot;Using SSR&quot; with Transition
         </AniLink>
       </li>
