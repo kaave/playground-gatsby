@@ -7,11 +7,16 @@ html {
     width: 100%;
     height: -webkit-fill-available;
     font-size: 62.5%; // most browsers will display 1rem as 10px
-
-    // kerning configs
     font-feature-settings: "palt" on;
     line-height: 1.4;
     letter-spacing: 0.05em;
+    word-wrap: break-word;
+
+    // typography configs
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {

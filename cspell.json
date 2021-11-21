@@ -26,6 +26,7 @@
         "noopener",
         "noreferrer",
         "focusring",
+        "glsl",
         // font
         "woff",
         "noto",

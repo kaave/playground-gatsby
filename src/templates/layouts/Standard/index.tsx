@@ -5,7 +5,6 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 import { Header } from '../../../components/widgets/Header';
-import './index.scss';
 import { Footer } from '@components/widgets/Footer';
 import { Bootstrap } from '@templates/layouts/Bootstrap';
 import { graphql, useStaticQuery } from 'gatsby';

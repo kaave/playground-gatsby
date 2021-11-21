@@ -1,4 +1,5 @@
 import { StandardLayout } from '../layouts/Standard';
+import * as classes from './index.module.scss';
 import { Meta } from '@components/widgets/Meta';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -11,12 +12,12 @@ export const Index = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <StaticImage
+      className={classes.StaticImage}
       src="../../images/gatsby-astronaut.png"
       width={300}
       quality={95}
       formats={['auto', 'webp', 'avif']}
       alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
     />
     <p>
       <Link to="/page-2/">Go to page 2</Link> <br />

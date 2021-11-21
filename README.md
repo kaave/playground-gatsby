@@ -1,5 +1,13 @@
 # Gatsby template for Simple web contents
 
+## WIP
+
+- [ ] dotenv
+- [ ] Add page transition
+- [ ] Google Analytics / Tag Manager
+- [ ] Connect with Headless CMS
+- [ ] Deploy to Netlify
+
 ## Directory structure
 
 ```txt
