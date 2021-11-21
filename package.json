@@ -33,6 +33,10 @@
       "sort-package-json"
     ]
   },
+  "browserslist": [
+    ">= 1% in jp",
+    "not ie 11"
+  ],
   "dependencies": {
     "gatsby": "^4.2.0",
     "gatsby-plugin-gatsby-cloud": "^4.2.0",
