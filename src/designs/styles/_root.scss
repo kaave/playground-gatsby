@@ -6,7 +6,9 @@
 html {
     width: 100%;
     height: -webkit-fill-available;
-    font-size: 62.5%;
+    font-size: 62.5%; // most browsers will display 1rem as 10px
+
+    // kerning configs
     font-feature-settings: "palt" on;
     line-height: 1.4;
     letter-spacing: 0.05em;
