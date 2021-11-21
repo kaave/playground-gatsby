@@ -3,7 +3,7 @@ import * as classes from './index.module.scss';
 import { Meta } from '@components/widgets/Meta';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import { AniLink } from 'gatsby-plugin-transition-link';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 
 export const Index = () => (
