@@ -3,6 +3,7 @@ import * as classes from './index.module.scss';
 import { Meta } from '@components/widgets/Meta';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import { AniLink } from 'gatsby-plugin-transition-link';
 import React from 'react';
 
 export const Index = () => (
@@ -19,9 +20,18 @@ export const Index = () => (
       formats={['auto', 'webp', 'avif']}
       alt="A Gatsby astronaut"
     />
-    <p>
-      <Link to="/using-ssr">Go to &quot;Using SSR&quot;</Link> <br />
-      <Link to="/using-dsg">Go to &quot;Using DSG&quot;</Link>
-    </p>
+    <ul>
+      <li>
+        <Link to="/using-ssr">Go to &quot;Using SSR&quot;</Link>
+      </li>
+      <li>
+        <AniLink paintDrip duration={1} to="/using-ssr">
+          Go to &quot;Using SSR&quot; with Transition
+        </AniLink>
+      </li>
+      <li>
+        <Link to="/using-dsg">Go to &quot;Using DSG&quot;</Link>
+      </li>
+    </ul>
   </StandardLayout>
 );

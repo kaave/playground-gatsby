@@ -3,7 +3,7 @@
 ## WIP
 
 - [x] dotenv
-- [ ] Add page transition
+- [x] Add page transition
 - [ ] Google Analytics / Tag Manager
 - [ ] Connect with Headless CMS
 - [ ] Deploy to Netlify

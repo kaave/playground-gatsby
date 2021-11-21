@@ -25,6 +25,7 @@ const plugins = [
   'gatsby-plugin-no-sourcemaps',
   'gatsby-plugin-sitemap',
   'gatsby-plugin-react-helmet',
+  'gatsby-plugin-transition-link',
   'gatsby-plugin-image',
   {
     resolve: 'gatsby-source-filesystem',
