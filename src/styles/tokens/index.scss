@@ -1,0 +1,113 @@
+@use "sass:meta";
+@use "breakPoint";
+@use "color";
+@use "ease";
+@use "layout";
+@use "typography";
+@use "zIndex";
+
+:root {
+    /*
+     * BreakPoint
+     */
+    --break-point-max: #{breakPoint.$max};
+    --break-point-min: #{breakPoint.$min};
+
+    /*
+     * Color
+     */
+    --color-white: #{color.$white};
+    --color-white-light: #{color.$whiteLight};
+    --color-white-gray: #{color.$whiteGray};
+    --color-white-dark: #{color.$whiteDark};
+    --color-light: #{color.$light};
+    --color-gray: #{color.$gray};
+    --color-dark: #{color.$dark};
+    --color-black: #{color.$black};
+    --color-brand-light: #{color.$brandLight};
+    --color-brand-default: #{color.$brandDefault};
+    --color-brand-dark: #{color.$brandDark};
+    --color-accent: #{color.$accent};
+    --color-highlight: #{color.$highlight};
+
+    --color-background: var(--color-white);
+    --color-text: var(--color-black);
+
+    /*
+     * Ease
+     */
+    --ease-in-sine: #{ease.$inSine};
+    --ease-out-sine: #{ease.$outSine};
+    --ease-in-out-sine: #{ease.$inOutSine};
+    --ease-in-quad: #{ease.$inQuad};
+    --ease-out-quad: #{ease.$outQuad};
+    --ease-in-out-quad: #{ease.$inOutQuad};
+    --ease-in-cubic: #{ease.$inCubic};
+    --ease-out-cubic: #{ease.$outCubic};
+    --ease-in-out-cubic: #{ease.$inOutCubic};
+    --ease-in-quart: #{ease.$inQuart};
+    --ease-out-quart: #{ease.$outQuart};
+    --ease-in-out-quart: #{ease.$inOutQuart};
+    --ease-in-quint: #{ease.$inQuint};
+    --ease-out-quint: #{ease.$outQuint};
+    --ease-in-out-quint: #{ease.$inOutQuint};
+    --ease-in-expo: #{ease.$inExpo};
+    --ease-out-expo: #{ease.$outExpo};
+    --ease-in-out-expo: #{ease.$inOutExpo};
+    --ease-in-circ: #{ease.$inCirc};
+    --ease-out-circ: #{ease.$outCirc};
+    --ease-in-out-circ: #{ease.$inOutCirc};
+    --ease-in-back: #{ease.$inBack};
+    --ease-out-back: #{ease.$outBack};
+    --ease-in-out-back: #{ease.$inOutBack};
+
+    --ease-fade: var(--ease-out-expo);
+    --ease-move: var(--ease-in-out-quart);
+
+    /*
+     * Layout
+     */
+    --layout-inner: #{layout.$inner};
+    --layout-gutter: #{layout.$gutter};
+
+    /*
+     * Typography
+     */
+    --typography-family-sans-serif: #{meta.inspect(typography.$familySansSerif)};
+    --typography-family-serif: #{meta.inspect(typography.$familySerif)};
+    --typography-family-monospace: #{typography.$familyMonospace};
+    --typography-weight-thin: #{typography.$weightThin};
+    --typography-weight-extra-light: #{typography.$weightExtraLight};
+    --typography-weight-light: #{typography.$weightLight};
+    --typography-weight-normal: #{typography.$weightNormal};
+    --typography-weight-medium: #{typography.$weightMedium};
+    --typography-weight-semi-bold: #{typography.$weightSemiBold};
+    --typography-weight-bold: #{typography.$weightBold};
+    --typography-weight-extra-bold: #{typography.$weightExtraBold};
+    --typography-weight-black: #{typography.$weightBlack};
+    --typography-size-xs: #{typography.$sizeXS};
+    --typography-size-s: #{typography.$sizeS};
+    --typography-size-m: #{typography.$sizeM};
+    --typography-size-l: #{typography.$sizeL};
+    --typography-size-xl: #{typography.$sizeXL};
+    --typography-size-header-pc: #{typography.$sizeHeaderPc};
+    --typography-size-header: #{typography.$sizeHeader};
+    --typography-size-section-header-pc: #{typography.$sizeSectionHeaderPc};
+    --typography-size-section-header: #{typography.$sizeSectionHeader};
+
+    --typography-base: var(--typography-family-sans-serif);
+
+    /*
+     * z-index
+     */
+    --z-index-lv1: #{zIndex.$lv1};
+    --z-index-lv2: #{zIndex.$lv2};
+    --z-index-lv3: #{zIndex.$lv3};
+    --z-index-lv4: #{zIndex.$lv4};
+    --z-index-lv5: #{zIndex.$lv5};
+    --z-index-lv6: #{zIndex.$lv6};
+    --z-index-lv7: #{zIndex.$lv7};
+    --z-index-lv8: #{zIndex.$lv8};
+    --z-index-lv9: #{zIndex.$lv9};
+    --z-index-lv10: #{zIndex.$lv10};
+}

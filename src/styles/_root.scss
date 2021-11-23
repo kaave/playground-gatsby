@@ -1,5 +1,5 @@
 @use "tokens/color";
-@use "tokens/font";
+@use "tokens/typography";
 @use "tokens/zIndex";
 @use "mixins";
 
@@ -24,8 +24,8 @@ body {
     width: 100%;
     min-height: 100vh;
     min-height: -webkit-fill-available; // mobile viewport bug fix
-    font-family: font.$familyBase;
-    font-size: font.$sizeM;
-    color: color.$black;
-    background: color.$white;
+    font-family: var(--typography-base);
+    font-size: var(--typography-size-m);
+    color: var(--color-text);
+    background: var(--color-background);
 }
