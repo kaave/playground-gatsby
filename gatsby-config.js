@@ -61,6 +61,7 @@ const plugins = [
       ],
     },
   },
+  ...(process.env.NODE_ENV === 'production' ? ['gatsby-plugin-netlify-cms'] : []),
 ];
 
 module.exports = { siteMetadata, plugins };
