@@ -15,6 +15,7 @@
         "paths": {
             "@gen/*": ["./src/__generated__/*"],
             "@components/*": ["./src/components/*"],
+            "@contexts/*": ["./src/contexts/*"],
             "@images/*": ["./src/images/*"],
             "@styles/*": ["./src/styles/*"],
             "@templates/*": ["./src/templates/*"],
