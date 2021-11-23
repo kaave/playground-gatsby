@@ -17,11 +17,14 @@ const paths = glob
     {},
   );
 
-if (!fs.pathExists(generatePath)) {
-  fs.mkdirpSync(generatePath);
-}
+async function main() {
+  const pathExists = await fs.pathExists(generatePath);
+  if (!pathExists) {
+    await fs.mkdirp(generatePath);
+  }
 
-fs.writeFileSync(path.join(generatePath, 'Routes.tsx'), createRoutesCode(JSON.stringify(paths, null, 2)));
+  await fs.writeFile(path.join(generatePath, 'Routes.tsx'), createRoutesCode(JSON.stringify(paths, null, 2)));
+}
 
 function createRoutesCode(json: string): string {
   return `/* eslint-disable */
@@ -30,3 +33,5 @@ function createRoutesCode(json: string): string {
 export const Routes = ${json}
 `;
 }
+
+main();
