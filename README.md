@@ -7,7 +7,7 @@
 - [x] Google Analytics / Tag Manager
   - Use `gatsby-plugin-google-gtag`
 - [ ] Connect with Headless CMS
-- [ ] Deploy to Netlify
+- [x] Deploy to Netlify
 
 ## Directory structure
 
@@ -19,12 +19,13 @@
 ├── public            # gatsby generates files
 ├── scripts           # gatsby supports scripts
 ├── src
-    ├── __generated__ # auto generated codes from GraphQL query
-    ├── components    # common components
-    ├── images        # static images
-    ├── pages         # routes defines container components
-    ├── styles        # style files
-    └── templates     # root function components
+|   ├── __generated__ # auto generated codes from GraphQL query
+|   ├── components    # common components
+|   ├── images        # static images
+|   ├── pages         # routes defines container components
+|   ├── styles        # style files
+|   ├── templates     # root function components
+|   └── types         # type declaration files
 ├── .eslintrc.js
 ├── .gitignore
 ├── .prettierignore
