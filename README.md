@@ -4,7 +4,8 @@
 
 - [x] dotenv
 - [x] Add page transition
-- [ ] Google Analytics / Tag Manager
+- [x] Google Analytics / Tag Manager
+  - Use `gatsby-plugin-google-gtag`
 - [ ] Connect with Headless CMS
 - [ ] Deploy to Netlify
 
