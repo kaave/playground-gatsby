@@ -1,3 +1,4 @@
+import { RoutesProvider } from '@contexts/routes';
 import { SiteMetaDataProvider } from '@contexts/siteMetaData';
 import '@styles/index.scss';
 import React from 'react';
@@ -8,4 +9,8 @@ type Props = {
 };
 
 // eslint-disable-next-line react/jsx-no-useless-fragment
-export const Bootstrap = ({ children }: Props) => <SiteMetaDataProvider>{children}</SiteMetaDataProvider>;
+export const Bootstrap = ({ children }: Props) => (
+  <RoutesProvider>
+    <SiteMetaDataProvider>{children}</SiteMetaDataProvider>
+  </RoutesProvider>
+);
