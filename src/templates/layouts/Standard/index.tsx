@@ -16,11 +16,11 @@ export const StandardLayout = ({ children }: Props) => (
 );
 
 const Inner = ({ children }: Props) => {
-  const siteData = useSiteMetaData();
+  const { title } = useSiteMetaData();
 
   return (
     <>
-      <Header siteTitle={siteData?.title || `Title`} />
+      <Header title={title} />
       <main>{children}</main>
       <Footer />
     </>

@@ -1,10 +1,10 @@
 import { Meta } from '@components/widgets/Meta';
-import { StandardLayout } from '@templates/layouts/Standard';
+import { StandardLayout as Layout } from '@templates/layouts/Standard';
 import { Link } from 'gatsby';
 import React from 'react';
 
 const UsingDSG = () => (
-  <StandardLayout>
+  <Layout>
     <Meta title="Using DSG" />
     <h1>Hello from a DSG Page</h1>
     <p>This page is not created until requested by a user.</p>
@@ -16,7 +16,7 @@ const UsingDSG = () => (
       .
     </p>
     <Link to="/">Go back to the homepage</Link>
-  </StandardLayout>
+  </Layout>
 );
 
 export default UsingDSG;

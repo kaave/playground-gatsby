@@ -1,3 +1,4 @@
+import { DsgPages } from './gatsby-node';
 import capitalize from 'capitalize';
 import fs from 'fs-extra';
 import glob from 'glob';
@@ -14,7 +15,7 @@ const paths = glob
       ...acc,
       [capitalize.words(s.replace(/^\//, '')).replace('-', '')]: s.replace(/index$/, ''),
     }),
-    {},
+    { ...DsgPages },
   );
 
 async function main() {
@@ -30,7 +31,7 @@ function createRoutesCode(json: string): string {
   return `/* eslint-disable */
 /* cSpell:disable */
 
-export const Routes = ${json}
+export const Routes = ${json} as const
 `;
 }
 

@@ -1,4 +1,4 @@
-import { StandardLayout } from '../layouts/Standard';
+import { StandardLayout as Layout } from '../layouts/Standard';
 import * as classes from './index.module.scss';
 import { Meta } from '@components/widgets/Meta';
 import { Routes } from '@gen/Routes';
@@ -8,7 +8,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import React from 'react';
 
 export const Index = () => (
-  <StandardLayout>
+  <Layout>
     <Meta title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
@@ -34,5 +34,5 @@ export const Index = () => (
         <Link to="/using-dsg">Go to &quot;Using DSG&quot;</Link>
       </li>
     </ul>
-  </StandardLayout>
+  </Layout>
 );

@@ -1,4 +1,4 @@
-import { StandardLayout } from '../layouts/Standard';
+import { StandardLayout as Layout } from '../layouts/Standard';
 import { Meta } from '@components/widgets/Meta';
 import { Link } from 'gatsby';
 import React from 'react';
@@ -8,7 +8,7 @@ type Props = {
 };
 
 export const UsingSsr = ({ serverData }: Props) => (
-  <StandardLayout>
+  <Layout>
     <Meta title="Using SSR" />
     <h1>SSR page</h1>
     <img style={{ width: '300px' }} alt="A random dog" src={serverData.message} />
@@ -21,5 +21,5 @@ export const UsingSsr = ({ serverData }: Props) => (
       .
     </p>
     <Link to="/">Go back to the homepage</Link>
-  </StandardLayout>
+  </Layout>
 );

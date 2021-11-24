@@ -1,3 +1,4 @@
+import { invariant } from '@/helpers/invariant';
 import { graphql, useStaticQuery } from 'gatsby';
 import type { ReactNode } from 'react';
 import React, { createContext, useContext } from 'react';
@@ -14,6 +15,12 @@ const query = graphql`
   }
 `;
 
+type SiteMetaData = {
+  title: string;
+  description: string;
+  author: string;
+};
+
 const siteMetaData = createContext<Nullable<GatsbyTypes.SiteMetadataQuery>>(null);
 
 export const SiteMetaDataProvider = ({ children }: { children: ReactNode }) => {
@@ -26,11 +33,25 @@ export const SiteMetaDataProvider = ({ children }: { children: ReactNode }) => {
 /**
  * @throws {Error} case of SiteData not provided.
  */
-export function useSiteMetaData(): NonNullable<GatsbyTypes.SiteMetadataQuery['site']>['siteMetadata'] {
+export function useSiteMetaData(): SiteMetaData {
   const value = useContext(siteMetaData);
 
   if (value === null || !value.site) {
     throw new Error('SiteData not provided');
+  } else if (
+    !invariant<SiteMetaData>(value.site.siteMetadata, data => {
+      if (!data) {
+        return false;
+      }
+
+      return (
+        typeof (data as any)?.title === 'string' &&
+        typeof (data as any)?.description === 'string' &&
+        typeof (data as any)?.author === 'string'
+      );
+    })
+  ) {
+    throw new Error('SiteData is invalid');
   }
 
   return value.site.siteMetadata;

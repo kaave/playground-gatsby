@@ -1,1 +1,1 @@
-export { createPages } from './createPages';
+export { createPages, DsgPages } from './createPages';
