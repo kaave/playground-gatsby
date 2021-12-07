@@ -7,7 +7,7 @@
         "@cspell/dict-npm/cspell-ext.json",
         "@cspell/dict-typescript/cspell-ext.json"
     ],
-    "ignorePaths": ["**/node_modules/**", "./.cache/*", "./public/*"],
+    "ignorePaths": ["**/node_modules/**", "./.cache/*", "./public/*", "./src/__generated__/*"],
     "words": [
         // 名詞
         "saml",
